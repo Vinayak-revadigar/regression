@@ -23,4 +23,6 @@ Inferences
 1)Decision Tree (No Tuning): This model achieved the lowest MAPE on the training set (0.119723%), indicating a good fit to the training data. However, it also had a relatively higher MAPE on the test set (3.234282%), suggesting some degree of overfitting. The model's depth is 37, indicating a complex tree structure.
 
 2)Decision Tree (GridSearchCV) and Decision Tree (RandomizedSearchCV): Both models obtained similar MAPE values on both the training and test sets, indicating a balanced performance. The MAPE on the training set is higher compared to the model without tuning, indicating a slight reduction in overfitting. The depth of these models is 20, suggesting a slightly less complex tree structure compared to the model without tuning.
+
+
 3)Overall, the models with hyperparameter tuning (GridSearchCV and RandomizedSearchCV) performed better in terms of balancing the trade-off between fitting the training data and generalizing to the test data. The slight increase in training MAPE compared to the model without tuning suggests a trade-off for improved test set performance and reduced overfitting. The similar MAPE values between GridSearchCV and RandomizedSearchCV indicate that the random search approach achieved comparable results to the exhaustive grid search.
